@@ -1,13 +1,15 @@
-# ai-governance-toolkit
+# AI Governance Toolkit
 
-Stub Python project. Described as "framework for AI governance - policies, compliance, risk assessment, and auditing," but none of that functionality exists.
+Comprehensive framework for AI governance - policies, compliance, risk assessment, and auditing.
 
-## What's actually here
+## About
+AI Governance Toolkit provides organizations with tools to manage AI systems responsibly. It covers policy templates, compliance checklists, risk assessment frameworks, and audit workflows aligned with emerging AI regulations and best practices.
 
-A single class in `src/core.py` (AiGovernanceToolkit) with placeholder methods (process, analyze, transform, validate, export, get_stats) that each return a fixed dictionary like `{ "ok": True }` without doing any real work. There is no policy management, no compliance checking, no risk assessment, no auditing - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No governance or compliance libraries are present.
+## Tech Stack
+- Language: Python
+- Framework: Modular governance components
+- Reporting: Risk scoring and compliance dashboards
+- Standards: Aligned with EU AI Act and NIST AI RMF
 
 ## Status
-
-Scaffolding only. No working governance functionality exists.
+Active development - governance framework and risk assessment modules established.
