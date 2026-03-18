@@ -1,63 +1,43 @@
-# Ai Governance Toolkit
+# ai-governance-toolkit
 
-AI governance — policies, compliance, risk, auditing
+**Framework for AI governance — policies, compliance, risk assessment, and auditing**
 
-## Features
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-- Api
-Audit Logger
-Compliance Checker
-Model Registry
-Policy Engine
-Reporter
-Risk Assessor
-
-## Tech Stack
-
-- **Language:** Python
-- **Framework:** FastAPI
-- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
-- **Containerization:** Docker + Docker Compose
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.11+
-- Docker & Docker Compose (optional)
-
-### Installation
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/ai-governance-toolkit.git
-cd ai-governance-toolkit
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-### Running
+## Quick Start
+```python
+from src.core import AiGovernanceToolkit
+ instance = AiGovernanceToolkit()
+r = instance.analyze(input="test")
+```
 
+## CLI
 ```bash
-uvicorn app.main:app --reload
+python -m src status
+python -m src run --input "data"
 ```
 
-### Docker
+## API
+| Method | Description |
+|--------|-------------|
+| `analyze()` | Analyze |
+| `evaluate()` | Evaluate |
+| `score()` | Score |
+| `compare()` | Compare |
+| `get_insights()` | Get insights |
+| `generate_report()` | Generate report |
+| `get_stats()` | Get stats |
+| `reset()` | Reset |
 
+## Test
 ```bash
-docker-compose up
-```
-
-## Project Structure
-
-```
-ai-governance-toolkit/
-├── src/           # Source code
-├── tests/         # Test suite
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
+pytest tests/ -v
 ```
 
 ## License
-
-MIT
+(c) 2026 Officethree Technologies. All Rights Reserved.
