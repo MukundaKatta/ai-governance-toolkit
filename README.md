@@ -1,30 +1,63 @@
-# ai-governance-toolkit
+# Ai Governance Toolkit
 
-**AI governance — policies, compliance, risk, auditing**
+AI governance — policies, compliance, risk, auditing
 
-## Install
+## Features
+
+- Api
+Audit Logger
+Compliance Checker
+Model Registry
+Policy Engine
+Reporter
+Risk Assessor
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/ai-governance-toolkit.git
+cd ai-governance-toolkit
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **policy_engine**
-- **risk_assessor**
-- **compliance_checker**
-- **audit_logger**
-- **model_registry**
-- **reporter**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+ai-governance-toolkit/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
